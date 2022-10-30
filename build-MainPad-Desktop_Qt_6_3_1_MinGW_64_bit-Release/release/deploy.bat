@@ -1,0 +1,1 @@
+C:\Qt\6.3.1\mingw_64\bin\windeployqt.exe E:\qt\mainpad\build-MainPad-Desktop_Qt_6_3_1_MinGW_64_bit-Release\release\MainPad.exe

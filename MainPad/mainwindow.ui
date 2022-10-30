@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>800</width>
+    <height>600</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <widget class="QTextEdit" name="textEdit">
+    <property name="geometry">
+     <rect>
+      <x>20</x>
+      <y>40</y>
+      <width>761</width>
+      <height>521</height>
+     </rect>
+    </property>
+   </widget>
+  </widget>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>800</width>
+     <height>25</height>
+    </rect>
+   </property>
+   <widget class="QMenu" name="menue">
+    <property name="title">
+     <string>File</string>
+    </property>
+    <addaction name="actionSalva"/>
+    <addaction name="actionApri"/>
+   </widget>
+   <widget class="QMenu" name="menuModifica">
+    <property name="title">
+     <string>Modifica</string>
+    </property>
+    <widget class="QMenu" name="menuFont">
+     <property name="title">
+      <string>Font</string>
+     </property>
+     <addaction name="actionGrassetto"/>
+     <addaction name="actionCorsivo"/>
+    </widget>
+    <addaction name="menuFont"/>
+   </widget>
+   <widget class="QMenu" name="menu">
+    <property name="title">
+     <string>?</string>
+    </property>
+    <addaction name="actionInfo"/>
+   </widget>
+   <addaction name="menue"/>
+   <addaction name="menuModifica"/>
+   <addaction name="menu"/>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+  <action name="actionSalva">
+   <property name="icon">
+    <iconset resource="risorse.qrc">
+     <normaloff>:/icon/img/salva.png</normaloff>:/icon/img/salva.png</iconset>
+   </property>
+   <property name="text">
+    <string>Salva</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+S</string>
+   </property>
+  </action>
+  <action name="actionApri">
+   <property name="icon">
+    <iconset resource="risorse.qrc">
+     <normaloff>:/icon/img/apri.png</normaloff>:/icon/img/apri.png</iconset>
+   </property>
+   <property name="text">
+    <string>Apri</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+A</string>
+   </property>
+  </action>
+  <action name="actionGrassetto">
+   <property name="checkable">
+    <bool>true</bool>
+   </property>
+   <property name="icon">
+    <iconset>
+     <normalon>:/icon/img/Grassetto.png</normalon>
+    </iconset>
+   </property>
+   <property name="text">
+    <string>Grassetto</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+Alt+G</string>
+   </property>
+  </action>
+  <action name="actionCorsivo">
+   <property name="checkable">
+    <bool>true</bool>
+   </property>
+   <property name="icon">
+    <iconset resource="risorse.qrc">
+     <normaloff>:/icon/img/corsivo.png</normaloff>:/icon/img/corsivo.png</iconset>
+   </property>
+   <property name="text">
+    <string>Corsivo</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+Alt+C</string>
+   </property>
+  </action>
+  <action name="actionInfo">
+   <property name="text">
+    <string>Info</string>
+   </property>
+  </action>
+ </widget>
+ <resources>
+  <include location="risorse.qrc"/>
+ </resources>
+ <connections/>
+</ui>

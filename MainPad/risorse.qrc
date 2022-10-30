@@ -1,0 +1,8 @@
+<RCC>
+    <qresource prefix="/icon">
+        <file>img/Grassetto.png</file>
+        <file>img/corsivo.png</file>
+        <file>img/apri.png</file>
+        <file>img/salva.png</file>
+    </qresource>
+</RCC>
